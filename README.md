@@ -83,7 +83,42 @@ Aborting
 
 Git is not happy. Let's open the repository with Atom (our emacs with git enabled) and look for the [conflict markers](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/) `<<<<<<<`
 
-Accept or refuse your our your collaborators edits by choosing what to keep/delete. Save your work. Then add and commit.
+Accept or refuse your our your collaborators edits by choosing what to keep/delete. Save your work and add your file. What tells git now ?
+
+```bash
+$ git add README.md
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	modified:   README.md
+```
+
+Let's commit and see what git tells us :
+
+```bash
+$ git commit -m "merging remote and local changes"
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Again : strange. Why does git tells me that there are Changes not staged for commit ?
+
 
 
 
