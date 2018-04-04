@@ -17,3 +17,18 @@ Repository to test collaborative git workflows
 ```bash
 git@github.com:pokyah/collaboration_test.git
 ```
+
+
+
+
+
+
+
+      Salut !
+     /
+     
+    O
+  /||\
+   \\           
+  / /
+ °°°°
