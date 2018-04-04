@@ -10,7 +10,8 @@ Repository to test collaborative git workflows
 
 ## what we have done so far 
 
-1. pasting each member public SSH key in repository setting so that everyone can collaborate on the upstream repository without the need to ask for pull requests.
+1. Adding all the team members as repository's collaborators (through Github interface via github username)
+
 2. each collaborator `git clone` the online github repository on his iwn computer :
 
 ```bash
